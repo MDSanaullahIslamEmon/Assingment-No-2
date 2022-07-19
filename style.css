@@ -1,0 +1,104 @@
+/* ------------------
+utilitis or othoriti
+--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* margin-right: 140px; */
+/* margin-left: 140px; */
+
+/*-------------
+top part style 
+---------------*/
+.top-part {
+    background: #161616;
+    border-radius: 30px;
+    display: flex;
+    padding-bottom: 100px;
+
+}
+
+.top-text-area {
+    width: 50%;
+    color: #FFFFFF;
+    margin-left: 100px;
+}
+
+.top-img {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.top-text-area h1 {
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+
+.watch-live-button {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+/*------------------
+second part style
+------------------*/
+.second-part {
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+}
+
+.second-top {
+    display: grid;
+    background-color: #161616;
+    border-radius: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.button {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.button.red {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.player {
+    width: 312px;
+    border-radius: 10px;
+    border: 1px solid #161616;
+    box-shadow: 5px 5px 10px #131010;
+}
+
+.sub-player {
+    margin-left: 20px;
+}
