@@ -105,7 +105,7 @@ second part style
 .view-all-button {
     text-align: center;
     margin-top: 50px;
-    display: hidden;
+    display: none;
 }
 
 .view-all-button button {
@@ -156,6 +156,10 @@ hr {
 midIa queary
 --------------*/
 @media screen and (max-width:668px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
     /* first ::part */
     .top-part {
@@ -230,10 +234,14 @@ midIa queary
     }
 
     .view-all-button {
-        display: visible;
+        display: block;
     }
 
     .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last-part.show {
+        display: block;
     }
 }
