@@ -45,6 +45,12 @@ top part style
     text-decoration: none;
     background: #DD0000;
     border-radius: 5px;
+    position: absolute;
+    transition: transform 2s;
+}
+
+.watch-live-button:hover {
+    transform: rotate(360deg) scale(2);
 }
 
 /*------------------
@@ -82,6 +88,8 @@ second part style
 
 .info {
     font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -152,9 +160,23 @@ hr {
     font-size: 16px;
 }
 
-/*-----------
-midIa queary
---------------*/
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a i:hover {
+    color: #DD0000;
+}
+
+.contact-info a i {
+    font-size: 50px;
+    color: gold;
+
+}
+
+/*----------------------
+midIa queary for mobile
+------------------------*/
 @media screen and (max-width:668px) {
     body {
         margin: 0;
@@ -192,6 +214,7 @@ midIa queary
 
     .button {
         border: none;
+        border-bottom: 1px solid grey;
     }
 
     .container {
@@ -216,10 +239,14 @@ midIa queary
 
 /* MIDEA QUERY FOR TABLET */
 @media screen and (min-width:689px) and (max-width:992px) {
+
     body {
         width: 100%;
     }
 
+    /*---------
+second-part
+-----------*/
     .second-part {
         flex-direction: column;
         align-items: center;
@@ -231,10 +258,12 @@ midIa queary
         width: 500px;
         height: 50px;
         margin-bottom: 20px;
+        justify-content: space-between;
     }
 
     .button {
         border: none;
+        border-bottom: 1px solid grey;
     }
 
     .view-all-button {
@@ -245,6 +274,9 @@ midIa queary
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*----------
+last-part
+-----------*/
     .last-part h4 {
         margin-top: 70px;
     }
