@@ -29,6 +29,7 @@ top part style
 .top-img {
     margin-left: 100px;
     margin-top: 100px;
+
 }
 
 
@@ -229,6 +230,9 @@ hr {
 
 /* MIDEA QUERY FOR TABLET */
 @media screen and (max-width:992px) {
+    .top-text-area {
+        margin-left: 20px;
+    }
 
     .top-img {
         margin-left: 0;
