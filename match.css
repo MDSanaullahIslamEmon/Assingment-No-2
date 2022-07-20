@@ -1,0 +1,14 @@
+p {
+    display: inline-block;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+
+    transition: width 2s;
+}
+
+.player:hover {
+    width: 300px;
+}
