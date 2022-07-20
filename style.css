@@ -114,6 +114,35 @@ second part style
     box-shadow: 5px 5px 10px #131010;
 }
 
+/*--------------
+match time style 
+---------------*/
+
+.player.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.flag {
+    display: flex;
+}
+
+.middle {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    font-size: 24px;
+    color: #a0a0a0;
+}
+
+/* -------------------
+match time style end
+---------------------- */
 .sub-player {
     margin-left: 20px;
 }
@@ -197,6 +226,56 @@ hr {
     color: #DD0000;
 }
 
+
+/* MIDEA QUERY FOR TABLET */
+@media screen and (max-width:992px) {
+
+    .top-img {
+        margin-left: 0;
+    }
+
+    /*---------
+second-part
+-----------*/
+    .second-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-top {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        justify-content: space-evenly;
+    }
+
+    .button {
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+
+    .view-all-button {
+        display: block;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*----------
+last-part
+-----------*/
+    .last-part h4 {
+        margin-top: 70px;
+    }
+
+    .last-part.show {
+        display: block;
+    }
+}
+
 /*----------------------
 midIa queary for mobile
 ------------------------*/
@@ -253,54 +332,5 @@ midIa queary for mobile
     .last-part {
         flex-direction: column;
         align-items: center;
-    }
-}
-
-/* MIDEA QUERY FOR TABLET */
-@media screen and (min-width:689px) and (max-width:992px) {
-
-    .top-img {
-        margin-left: 0;
-    }
-
-    /*---------
-second-part
------------*/
-    .second-part {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .second-top {
-        background-color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        width: 500px;
-        height: 50px;
-        justify-content: space-evenly;
-    }
-
-    .button {
-        border: none;
-        border-bottom: 1px solid grey;
-    }
-
-    .view-all-button {
-        display: block;
-    }
-
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*----------
-last-part
------------*/
-    .last-part h4 {
-        margin-top: 70px;
-    }
-
-    .last-part.show {
-        display: block;
     }
 }
